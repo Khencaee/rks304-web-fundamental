@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+      <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: white;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background-color: white;
+            padding: 5px;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .nama {
+            color: purple;
+            font-weight: bold;
+            font-size: 22px;
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        nav {
+            display: flex;
+            gap: 20px;;
+        }
+
+        nav a {
+            color: #222;
+            text-decoration: underline;
+            font-size: 16px;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        footer {
+            text-align: center;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            
+        }
+
+        @media (max-width: 1200px) {
+            section {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <h1 class="nama">khendy</h1>
+            <nav>
+                <a href="index.html">Tentang</a>
+                <a href="portfolio.html">Portfolio</a>
+                <a href="contact.html">Kontak</a>
+            </nav>
+        </div>
+    </header>
+
+    <section>
+        <form>
+            <label for="nama">Nama Lengkap</label>
+            <input type="text" id="nama" name="nama" required>
+
+            <label for="email">Alamat Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="kategori">Kategori/Keperluan</label>
+            <select id="kategori" name="kategori">
+                <option value="konsultasi">Konsultasi</option>
+                <option value="kolaborasi">Kolaborasi</option>
+                <option value="pertanyaan">Pertanyaan</option>
+            </select>
+
+            <label for="pesan">Pesan</label>
+            <textarea id="pesan" name="pesan" rows="5" required></textarea>
+
+            <button type="submit">Kirim Pesan</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2026 Khendy Farza Sadewa</p>
+    </footer>
+</body>
+</html>

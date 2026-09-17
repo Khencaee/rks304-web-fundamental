@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Website Portofolio </title>
+
+    <style>
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+                background-color: white;
+                max-width: 1200px;
+                margin: 0 auto;
+                padding: 20px;
+            }
+
+            .foto-profil {
+                width: 500px;
+                height: 500px;
+                position: relative;
+                z-index: 1;
+            }
+
+            .kontak-link {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            header {
+                background-color: rgba(255, 255, 255, 0.7);
+                padding: 5px;
+                position: sticky;
+                top: 0;
+                z-index: 100;
+                backdrop-filter: blur(10px);
+            }
+
+            .navbar {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 20px;
+            }
+
+            .nama {
+                color: purple;
+                font-weight: bold;
+                font-size: 22px;
+                margin: 0;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+
+            nav {
+                display: flex;
+                gap: 20px;;
+            }
+
+            nav a {
+                color: #222;
+                text-decoration: underline;
+                font-size: 16px;
+            }
+
+            html {
+                scroll-behavior: smooth;
+            }
+
+            footer {
+                text-align: center;
+            }
+
+            .awal {
+                color: purple;
+            }
+
+            .projek {
+                color: darkcyan;
+            }
+
+            .hero {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                min-height: 70vh;
+            }
+
+            .hero h1 {
+                font-size: 48px;
+                margin: 10px 0;
+            }
+
+            .hero p {
+                font-size: 18px;
+                color: gray;
+            }
+
+            .grid-container {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 40px;
+            }
+
+            .grid-item {
+                background-color: #f9f5ff;
+                padding: 30px;
+                border-radius: 12px;
+                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            }
+
+            .tentang {
+                color: purple;
+
+            }
+
+            li {
+                list-style: none;
+                padding-left: 20px;
+                position: relative;
+                margin-bottom: 8px;
+            }
+
+            li::before {
+                content: "→";
+                color: purple;
+                position: absolute;
+                left: 0;
+            }
+        
+            .kontak {
+                color: purple;
+            }
+
+            .btn {
+                background-color: purple;
+                color: white;
+                padding: 12px 24px;
+                border-radius: 50px;
+                text-decoration: none;
+                display: inline-block;
+            }
+
+        @media (max-width : 1200px) {
+            .hero {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .foto-profil {
+                width: 100%;
+                max-width: 300px;
+                height: auto;
+            }
+
+            .grid-container {
+                grid-template-columns: 1fr;
+            }
+
+            .navbar {
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <h1 class="nama">khendy</h1>
+            <nav>
+                <a href="#tentang">Tentang</a>
+                <a href="portfolio.html">Portfolio</a>
+                <a href="contact.html">Kontak</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero_text">
+         <div class="awal">
+             <h3>Halo semua, Saya</h3>
+         </div>
+            <h1>Khendy Farza Sadewa</h1>
+            <p>Sedang belajar CyberSecurity di <a href="https://www.polibatam.ac.id/">Politeknik Negeri Batam</a></p>
+            <p>Portfolio ini dibuat berdasarkan tugas web fundamental.</p>
+            <a href="#hubungi saya" class="btn">Hubungi Saya</a>
+        </div>
+        <img src="foto.jpeg" alt="Foto Profil saya" class="foto-profil">
+    </section>
+
+    <section id="tentang">
+        <div class="tentang">
+            <h2>Tentang Saya</h2>
+        </div>
+        <div class="grid-container">
+            <div class="grid-item">
+                <h1>Riwayat Pendidikan</h1>
+                <p>Sebelum saya menginjakkan kaki di Politeknik Batam, saya adalah alumni dari :</p>
+                <ul>
+                    <li>SMA Nizam Al-Mulk Batam</li>
+                    <li>SMP Cendana Batam</li>
+                    <li>SDIT Al-Qudwah Tugumulyo</li>
+                </ul>
+            </div>
+            <div class="grid-item">
+                <h1>Skill/Keahlian</h1>
+                <p>Berikut skill yang saya baru pahami/kuasai :</p>
+                <ul>
+                    <li>Fotografi</li>
+                    <li>Videografi</li>
+                    <li>Menulis Novel</li>
+                    <li>Desain Grafis ( Photoshop, Premiere, Canva )</li>
+                    <li>Office ( Word, PowerPoint, Excel)</li>
+                    <li>HTML dan CSS</li>
+                </ul>
+        </div>
+    </section>
+
+    <section id="hubungi saya">
+        <div class="kontak">
+            <h2>Hubungi Saya</h2>
+        </div>
+        <div class="kontak-link">
+        <a href="https://instagram.com/khencaee">@khencaee</a>
+        <p>khendyuchiha@gmail.com</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 Khendy Farza Sadewa</p>
+    </footer>
+</body>
+</html>
